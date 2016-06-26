@@ -1,0 +1,33 @@
+$font-path:'../fonts/';
+$grid:12;
+$large:1680px;
+$medium:1068px;
+$small:735px;
+$image-path:'../images/';
+$rules:(
+large:$large,
+medium:$medium,
+small:$small,
+);
+%column{
+	float: left;
+	position: relative;
+}
+%clear{
+  content: "";
+  clear:both;
+  display: block;
+}
+%common{
+  display:block;
+  height:200px;
+  background-position: center center;
+}
+%hidetext{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top:0;
+  left:0;
+  overflow: hidden;
+}

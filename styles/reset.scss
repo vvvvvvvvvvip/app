@@ -1,0 +1,17 @@
+%reset{
+	padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "myriad normal4";
+  @extend %reset;
+}
+body,ul,li,h1,h2,h3,h4,h5,h6,p{
+  @extend %reset;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}

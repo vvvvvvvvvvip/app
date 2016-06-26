@@ -1,0 +1,17 @@
+@import 'vars';
+@for $i from 5 through 10{
+  .with-#{$i}-col::after{
+    @extend %clear;
+  };
+  .with-#{$i}-col .col{
+    @extend %column;
+    width:percentage( 1/$i );
+  };
+}
+@media screen and (max-width:map_get($rules,'small') ){
+  @for $i from 5 through 10{
+    .with-#{$i}-col .col{
+      width:100%;
+    };
+  }
+}
